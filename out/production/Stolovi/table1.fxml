@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="stoOznaka" text="Sto 1">
+         <font>
+            <Font name="DejaVu Sans Bold" size="33.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Label>
+      <Button fx:id="zauzmiBtn" mnemonicParsing="false" onAction="#pocniBrojanje" prefHeight="35.0" prefWidth="120.0" text="Zauzmi">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Button>
+      <ChoiceBox fx:id="izborCijena" prefHeight="35.0" prefWidth="120.0" value="Tarifa 1">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Tarifa 1" />
+               <String fx:value="Tarifa 2" />
+            </FXCollections>
+         </items>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </ChoiceBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label text="Trenutno vrijeme:">
+               <font>
+                  <Font name="Georgia" size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="vrijemeLabel" text="02:04:24">
+               <font>
+                  <Font name="Georgia" size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <HBox alignment="TOP_CENTER">
+         <children>
+            <Label alignment="TOP_CENTER" text="Trenutna cijena:" textAlignment="CENTER">
+               <font>
+                  <Font name="Georgia" size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+            <Label fx:id="cijenaLabel" contentDisplay="RIGHT" text="2.50">
+               <font>
+                  <Font name="Georgia" size="25.0" />
+               </font>
+               <HBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </HBox>
+      <Button fx:id="resetBtn" mnemonicParsing="false" onAction="#zaustavi" prefHeight="30.0" prefWidth="120.0" text="Reset">
+         <VBox.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </VBox.margin>
+      </Button>
+   </children>
+   <padding>
+      <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+   </padding>
+</VBox>
