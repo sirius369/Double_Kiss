@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.RowConstraints?>
 
 
-<BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snooker.tables.Controller">
+<BorderPane xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="snooker.tables.controller.Controller">
    <center>
       <GridPane fx:id="stolovi" alignment="CENTER" gridLinesVisible="true" hgap="2.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" vgap="2.0">
         <columnConstraints>

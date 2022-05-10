@@ -1,4 +1,4 @@
-package snooker.tables;
+package snooker.tables.controller;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;

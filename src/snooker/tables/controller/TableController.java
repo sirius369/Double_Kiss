@@ -1,4 +1,4 @@
-package snooker.tables;
+package snooker.tables.controller;
 
 import javafx.application.Platform;
 import javafx.beans.value.ChangeListener;
