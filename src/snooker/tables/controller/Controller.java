@@ -1,5 +1,6 @@
 package snooker.tables.controller;
 
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -7,7 +8,9 @@ import javafx.geometry.HPos;
 import javafx.geometry.Pos;
 import javafx.geometry.VPos;
 import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.layout.GridPane;
+import javafx.stage.Stage;
 
 import java.io.IOException;
 import java.net.URL;
@@ -39,6 +42,14 @@ public class Controller implements Initializable {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public void otvoriPostavke(ActionEvent event) throws IOException {
+        Parent root = FXMLLoader.load(getClass().getResource("/postavke.fxml"));
+        Stage stage = new Stage();
+        stage.setScene(new Scene(root));
+        stage.toFront();
+        stage.show();
     }
 }
 
