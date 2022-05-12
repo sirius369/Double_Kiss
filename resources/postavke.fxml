@@ -14,12 +14,12 @@
       </TableView>
       <VBox prefHeight="200.0">
          <children>
-            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Dodaj tarifu">
+            <Button fx:id="dodajTarifuBtn" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#dodajTarifu" text="Dodaj tarifu">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
-            <Button mnemonicParsing="false" text="Izmijeni tarifu">
+            <Button maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="Izmijeni tarifu">
                <VBox.margin>
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
@@ -29,6 +29,26 @@
                   <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
                </VBox.margin>
             </Button>
+            <Label text="Naziv tarife">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="nazivTarifeFld" prefWidth="120.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
+            <Label text="Cijena">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </Label>
+            <TextField fx:id="cijenaTarifeFld" prefWidth="120.0">
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TextField>
          </children>
       </VBox>
    </children>
